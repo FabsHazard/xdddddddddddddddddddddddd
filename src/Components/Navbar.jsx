@@ -5,18 +5,22 @@ import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 import React from 'react';
 import "../styles/logo.css";
-const navbarLinks = [
-  { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
-  { label: "NFT", href: "https://nft.metchain.tech/", ariaLabel: "NFT", openInNewTab: true },
-  { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
-  { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
-];
+
 const scrollToCommunity = () => {
   const communitySection = document.getElementById('community');
   if (communitySection) {
     communitySection.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
+
+const navbarLinks = [
+  { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
+  { label: "NFT", href: "https://nft.metchain.tech/", ariaLabel: "NFT", openInNewTab: true },
+  { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
+  { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
+];
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
