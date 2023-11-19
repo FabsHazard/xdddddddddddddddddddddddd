@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
-import EVM from "../../assets/images/EVM_v2.svg";
-import metaverse from "../../assets/images/Metaverse_v2.svg";
-import algorithm from "../../assets/images/hexes.svg";
-import metcoins from "../../assets/images/coins.png";
-import trading from "../../assets/images/trading.png";
+
 
 import chart from "../../assets/images/chart.png";
 import infotokenomics from "../../assets/images/InfoTokenomics.png";
