@@ -72,18 +72,23 @@ export const Tokenomics2 = () => {
 
         </motion.div>
         <div className="image-grid flex-wrap justify-center">
-            <img src={dashboard3} alt="Image 1" />
-            <img src={dashboard4} alt="Image 2" />
-            <img src={dashboard5} alt="Image 3" />
-            <img src={dashboard6} alt="Image 4" />
-          </div>
+          <img src={dashboard3} alt="Image 1" />
+          <img src={dashboard4} alt="Image 2" />
+          <img src={dashboard5} alt="Image 3" />
+          <img src={dashboard6} alt="Image 4" />
+          
+        </div>
+
+
+
           <div className="image-container flex justify-center">
-          <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden">
-            <img src={dashboard} alt="123" className="w-full h-auto" />
-          </div>
-          <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden">
-            <img src={dashboard2} alt="123" className="w-full h-auto" />
-          </div>
+            <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
+              <img src={dashboard} alt="123" className="w-full h-auto" />
+            </div>
+            <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
+              <img src={dashboard2} alt="123" className="w-full h-auto" />
+            </div>
+          
         </div>
     </section>
   );
