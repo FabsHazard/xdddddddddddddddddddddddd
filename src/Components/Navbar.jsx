@@ -9,8 +9,14 @@ const navbarLinks = [
   { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
   { label: "NFT", href: "https://nft.metchain.tech/", ariaLabel: "NFT", openInNewTab: true },
   { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
-  { label: "Community", href: "#community", ariaLabel: "Community" },
+  { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
 ];
+const scrollToCommunity = () => {
+  const communitySection = document.getElementById('community');
+  if (communitySection) {
+    communitySection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

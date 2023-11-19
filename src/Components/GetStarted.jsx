@@ -48,7 +48,7 @@ export const GetStarted = () => {
                     style={{ width: '500px', height: 'auto' }}
                   />
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our analytic platform.
+                    Experience the new Wallet.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
@@ -68,7 +68,7 @@ export const GetStarted = () => {
                     className="mb-4 rounded-md image-container"
                   />
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our analytic platform.
+                    Get on board to get mining rewards.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
@@ -89,7 +89,7 @@ export const GetStarted = () => {
                     className="mb-4 rounded-md image-container"
                   />
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    Experience the full power of our analytic platform.
+                    Experience the full power of our staking platform.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
