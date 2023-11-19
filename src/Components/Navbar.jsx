@@ -128,4 +128,4 @@ export const Navbar = () => {
   );
 };
 
-Export default Navbar
+Export default Navbar;
