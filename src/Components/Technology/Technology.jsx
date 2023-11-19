@@ -17,7 +17,7 @@ export const Technology = () => {
     {
       title : "EVM Compatibility",
       image : EVM,
-      description : `metchain is an EVM-compatible chain, enabling seamless integration with Ethereum-based tools and protocols.`,
+      description : `Metchain is an EVM-compatible chain, enabling seamless integration with Ethereum-based tools and protocols.`,
     },
     {
       title : "Metaverse Development Tools",
