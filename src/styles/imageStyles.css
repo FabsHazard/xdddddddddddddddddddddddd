@@ -1,0 +1,43 @@
+/* imageStyles.css */
+
+.image-container {
+  width: 100%; /* Set the width to 100% */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 1px;
+  justify-items: center; /* Center align the items horizontally */
+  align-items: center; /* Center align the items vertically */
+  text-align: center; 
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* Display one image per row on mobile */
+  }
+}
+.image-container-Utilities{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-Utilities img {
+  max-width: 30%; /* Adjusts the maximum width of images to fit their container */
+  height: auto;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .image-container-Utilities img {
+    max-width: 90%;
+  }
+}
+.image-section {
+  text-align: center; /* Aligns the text to the center */
+}
