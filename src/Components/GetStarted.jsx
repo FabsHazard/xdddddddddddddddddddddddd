@@ -1,21 +1,28 @@
 import { motion } from "framer-motion";
-import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import wallet from "../assets/images/Wallet.png";
 import mining from "../assets/images/metchainmining.png";
 import staking from "../assets/images/Staking.png";
-import background2 from "../assets/images/Background2.png";
 import React from "react";
 import "../styles/imageStyles.css";
+import miningPdf from "../assets/pdfs/mining_tutorial.pdf";
 
 export const GetStarted = () => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
+  const handleOpenNewTab = (url) => {
+    const newTab = window.open(url, '_blank');
+    if (newTab) {
+      newTab.focus();
+    }
+  };
+  const handleDownloadMiningPDF = () => {
+    const link = document.createElement('a');
+    link.href = miningPdf; // URL to the PDF file
+    link.download = 'MiningTutorial.pdf'; // File name when downloaded
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
+  };
   return (
-    <section className="w-screen flex justify-center bg-customDarkBg2 relative"
-
-    >
-
-      
+    <section className="w-screen flex justify-center bg-customDarkBg2 relative">
       <div className="absolute -top-16" id="pricing" />
       <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
@@ -33,47 +40,40 @@ export const GetStarted = () => {
             <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
               {/* Pricing Box 1: Beginner */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                  <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <div className="p-8 bg-customDarkBg3 rounded-3xl">
                   <img
-                      src={wallet}
-                      alt="Beginner"
-                      className="mb-4 rounded-md image-container"
-                      style={{ width: '500px', height: 'auto' }}
-                    />
-                    <div className="flex justify-start items-end">
-
-                    
-                    </div>
-                    <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                      Experience the full power of our analytic platform.
-                    </p>
-
-                    <div
-                      className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                      onClick={() => setIsModalOpen(true)}
-                    >
-                      Get the Wallet
-                    </div>
+                    src={wallet}
+                    alt="Beginner"
+                    className="mb-4 rounded-md image-container"
+                    style={{ width: '500px', height: 'auto' }}
+                  />
+                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                    Experience the full power of our analytic platform.
+                  </p>
+                  <div
+                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
+                  >
+                    Get the Wallet
                   </div>
-
                 </div>
+              </div>
+
               {/* Pricing Box 2: Standard */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
-                <img
+                  <img
                     src={mining}
                     alt="Beginner"
                     className="mb-4 rounded-md image-container"
                   />
-                  <div className="flex justify-start items-end">
-
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     Experience the full power of our analytic platform.
                   </p>
-                  </div>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={handleDownloadMiningPDF}
+
                   >
                     Start Mining
                   </div>
@@ -83,29 +83,22 @@ export const GetStarted = () => {
               {/* Pricing Box 3: Premium */}
               <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
                 <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                <img
+                  <img
                     src={staking}
                     alt="Beginner"
                     className="mb-4 rounded-md image-container"
                   />
-                  <div className="flex justify-start items-end">
-
-                  
-                  </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     Experience the full power of our analytic platform.
                   </p>
-
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
                   >
                     Start Staking
                   </div>
                 </div>
-
               </div>
-
             </div>
           </div>
         </motion.div>

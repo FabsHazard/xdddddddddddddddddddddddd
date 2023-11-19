@@ -5,9 +5,12 @@ import MediumImg from "../assets/images/Medium.png";
 import TwitterImg from "../assets/images/Twitter.png";
 import InstagramImg from "../assets/images/Instagram.png";
 import GithubImg from "../assets/images/Github.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
+
 
 export const Community = () => {
+  const communityRef = useRef(null);
+
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
   const [isTelegramHovered, setIsTelegramHovered] = useState(false);
   const [isMediumHovered, setIsMediumHovered] = useState(false);
@@ -47,7 +50,7 @@ export const Community = () => {
   };
 
   return (
-    <section className="py-12 sm:py-24 bg-customDarkBg1 w-full mt-16 mb-16">
+    <section ref={communityRef} id="community" className="py-12 sm:py-24 bg-customDarkBg1 w-full mt-16 mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
