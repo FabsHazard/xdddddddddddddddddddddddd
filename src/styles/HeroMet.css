@@ -97,11 +97,12 @@
     /* Other adjustments as needed */
   }
   .hero-title {
-    font-size: 6vw; /* Adjust font size for smaller screens */
+    font-size: 9w; /* Adjust font size for smaller screens */
     /* Other adjustments as needed */
   }
   .hero-description {
-    font-size: 6vw; /* Adjust font size for smaller screens */
+    width: 90%;
+    font-size: 5vw; /* Adjust font size for smaller screens */
     /* Other adjustments as needed */
   }
 }
