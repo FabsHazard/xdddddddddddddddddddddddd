@@ -4,8 +4,8 @@ import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
 
 import chart from "../../assets/images/chart.png";
 import infotokenomics from "../../assets/images/InfoTokenomics.png";
-import infotokenomics2 from "../../assets/images/infoTokenomics2.png";
-import infotokenomics3 from "../../assets/images/infoTokenomics3.png";
+import infotokenomics2 from "../../assets/images/infotokenomics2.png";
+import infotokenomics3 from "../../assets/images/infotokenomics3.png";
 import infotokenomics4 from "../../assets/images/infoTokenomics4.png";
 import infotokenomics5 from "../../assets/images/infoTokenomics5.png";
 import dashboard from "../../assets/images/dashboard.png";
