@@ -26,7 +26,7 @@ export const NFT = () => (
             <div className="w-2/3 sm:w-[620px] mx-auto">
               <div className="py-6 flex justify-center">
                 <a
-                  href="https://www.linkedin.com/company/metchain-tech/"
+                  href="https://nft.metchain.tech/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ width: "100%", height: "100%" }}
