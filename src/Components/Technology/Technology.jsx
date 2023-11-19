@@ -25,12 +25,12 @@ export const Technology = () => {
       description : `Metchain provides developers with a comprehensive set of tools to create their own virtual worlds and experiences.`,
     },
     {
-      title : "Evolved Heavyhash algorithm",
+      title : "Evolved Heavyhash Algorithm",
       image : algorithm,
       description : `Metchain is built on a modified Heavyhash algorithm, which enables low-impact, high-speed, and secure transactions.`,
     },
     {
-      title : "Metaswap trading protocol",
+      title : "Metaswap Trading Protocol",
       image : trading,
       description : `Metaswap is Metchain's native trading protocol, empowering users to establish liquidity pools, execute decentralized 
       exchanges, and stake tokens.`,
