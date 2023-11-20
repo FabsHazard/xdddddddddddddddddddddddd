@@ -81,10 +81,11 @@ export const Tokenomics2 = () => {
 
 
 
-          <div className="image-container flex justify-center">
-            <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
-              <img src={dashboard} alt="123" className="w-full h-auto" />
+          <div className="image-container mx-auto flex justify-center">
+          <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
+              <img src={dashboard} alt="123" className="w-full h-auto mx-30" />
             </div>
+  
             <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
               <img src={dashboard2} alt="123" className="w-full h-auto" />
             </div>
