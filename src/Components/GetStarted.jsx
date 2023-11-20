@@ -47,7 +47,7 @@ export const GetStarted = () => {
                     className="mb-4 rounded-md image-container"
                     style={{ width: '500px', height: 'auto' }}
                   />
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                  <p className="mb-10 text-white leading-loose">
                     Experience the new Wallet.
                   </p>
                   <div
@@ -67,7 +67,7 @@ export const GetStarted = () => {
                     alt="Beginner"
                     className="mb-4 rounded-md image-container"
                   />
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                  <p className="mb-10 text-white leading-loose">
                     Get on board to get mining rewards.
                   </p>
                   <div
@@ -88,7 +88,7 @@ export const GetStarted = () => {
                     alt="Beginner"
                     className="mb-4 rounded-md image-container"
                   />
-                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
+                  <p className="mb-10 text-white leading-loose">
                     Experience the full power of our staking platform.
                   </p>
                   <div

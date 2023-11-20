@@ -20,6 +20,22 @@ export const NFT = () => (
               <h2 className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-normal text-customSecondary">
                 NFT Collection
               </h2>
+              <p className="mb-10 text-white leading-loose">
+                The Metchain NFTs Genesis collection is a utility-focused collection offering 
+                its holders the early access to Metchain products and features. Metchain is the protocol
+                that aims to accelerate the adoption of the metaverse by connecting blockchains
+                  hosting metaverse projects seamlessly.
+
+                  NFTs are also a crucial part of the evolution of the Metchain Layer 2,
+                  being effectively part of the consensus, allowing Metchain to open staking possibilities to their holders.
+
+                  As pioneers of the Metchain network, 
+                  Metchain NFT holders will be testing all products
+                  before they are even live.
+                    Metchain NFT holders play a crucial role in the Metchain ecosystem as they will 
+                    provide the valuable feedback needed in the development and in return
+                    , contribute to the growth of Metchain and achieve a decentralized ecosystem.
+              </p>
             </div>
           </div>
           <div className="w-full lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">

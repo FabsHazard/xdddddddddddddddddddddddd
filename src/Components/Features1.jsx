@@ -44,7 +44,7 @@ export const Features1 = () => {
                 <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
                   Unlike any blockchain you have used before
                 </h2>
-                <p className="mb-10 text-customGrayText leading-loose">
+                <p className="mb-10 text-white leading-loose">
                   Metchain is a decentralized virtual world platform on blockchain, handling high transaction
                   volumes for real-time experiences, using a modified Heavyhash. It envisions coexistence,
                   creation, and interaction in virtual worlds, facilitating NFTs and the decentralized
