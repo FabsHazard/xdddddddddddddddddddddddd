@@ -46,11 +46,11 @@
   
   .hero-text {
     position: absolute;
-    width: 905px;
-    height: 548px;
+    width: 70%;
+    height: 100%;
     top: 100px;
-    font-size: 50px;
-  }
+    font-size: 35px;
+    }
   
   .hero-text p {
     margin: 0;
@@ -60,15 +60,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 70px;
+    font-size: 60px;
     color: darkorchid;
   }
   
   .hero-description {
     position: absolute;
-    top: 361px;
+    
+    top: 400px;
     left: 0;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 300;
     max-width: 70%; 
   }
@@ -94,15 +95,17 @@
   .hero-text {
     font-size: 6vw; /* Adjust font size for smaller screens */
     width: 90%;
+    top: 50px;
     /* Other adjustments as needed */
   }
   .hero-title {
-    font-size: 9w; /* Adjust font size for smaller screens */
+    font-size: 9vw; /* Adjust font size for smaller screens */
     /* Other adjustments as needed */
   }
   .hero-description {
     width: 90%;
-    font-size: 5vw; /* Adjust font size for smaller screens */
+    font-size: 5vw;
+    top: 250px; /* Adjust font size for smaller screens */
     /* Other adjustments as needed */
   }
 }
