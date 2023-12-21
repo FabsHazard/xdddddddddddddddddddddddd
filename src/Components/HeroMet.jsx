@@ -21,15 +21,13 @@ export const HeroMet = () => {
             Scalable and Sustainable Transactions for the Next Generation of
             Web3 Applications
           </p>
-        </div>
-        <div className="hero-title">
-          <p>Metchain</p>
-        </div>
-        <div className="hero-description">
           <p>
             Decentralized blockchain for smart contract execution, powered by an
             evolved Heavyhash algorithm.
           </p>
+        </div>
+        <div className="hero-title">
+          <p>Metchain</p>
         </div>
       
       </div>
