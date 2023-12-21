@@ -12,7 +12,12 @@ const scrollToCommunity = () => {
     communitySection.scrollIntoView({ behavior: 'smooth' });
   }
 };
-
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
 
 const navbarLinks = [
   { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
@@ -33,19 +38,17 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <a className="navbar-link" href="#home" aria-label="Home">
+          <a className="navbar-link" href="#home" aria-label="Home" onClick={scrollToTop}>
             <div className="flex justify-start items-center grow basis-0">
-              <div className="image-container">
+              <div className="image-container" onClick={scrollToTop}>
                 <img
-                    src={logo}
-                    alt="logo"
-                    className="mb-2 rounded-md max-h-20 max-w-full"
-                  />
-                
+                  src={logo}
+                  alt="logo"
+                  className="mb-2 rounded-md max-h-20 max-w-full cursor-pointer"
+                />
               </div>
             </div>
           </a>
-
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
