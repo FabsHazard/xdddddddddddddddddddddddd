@@ -13,6 +13,7 @@ export const GetStarted = () => {
       newTab.focus();
     }
   };
+  
   const handleDownloadMiningPDF = () => {
     const link = document.createElement('a');
     link.href = miningPdf; // URL to the PDF file
@@ -21,6 +22,7 @@ export const GetStarted = () => {
     link.rel = 'noopener noreferrer';
     link.click();
   };
+  
   return (
     <section className="w-screen flex justify-center bg-customDarkBg2 relative">
       <div className="absolute -top-16" id="pricing" />
@@ -37,21 +39,23 @@ export const GetStarted = () => {
                 Get Started
               </h2>
             </div>
-            <div className="flex flex-wrap flex-col lg:flex-row -mx-4 items-center mt-20">
+            <div className="flex flex-wrap justify-center gap-8 mt-20">
               {/* Pricing Box 1: Beginner */}
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                  <img
-                    src={wallet}
-                    alt="Beginner"
-                    className="mb-4 rounded-md image-container"
-                    style={{ width: '500px', height: 'auto' }}
-                  />
-                  <p className="mb-10 text-white leading-loose">
-                  Create your Web wallet.
-                  </p>
+              <div className="w-[350px] px-4 mb-8">
+                <div className="p-8 bg-customDarkBg3 rounded-3xl h-full flex flex-col justify-between">
+                  <div>
+                    <img
+                      src={wallet}
+                      alt="Beginner"
+                      className="mb-4 rounded-md image-container"
+                      style={{ width: '100%', height: 'auto' }}
+                    />
+                    <p className="mb-6 text-white leading-loose">
+                      Create your Web wallet.
+                    </p>
+                  </div>
                   <div
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    className="custom-button-colored font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
                     onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
                   >
                     Get the Wallet
@@ -60,20 +64,20 @@ export const GetStarted = () => {
               </div>
 
               {/* Pricing Box 2: Standard */}
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
+              <div className="w-[350px] px-4 mb-8">
+                <div className="p-8 bg-customDarkBg3 rounded-3xl">
                   <img
                     src={mining}
                     alt="Beginner"
                     className="mb-4 rounded-md image-container"
+                    style={{ width: '100%', height: 'auto' }}
                   />
-                  <p className="mb-10 text-white leading-loose">
+                  <p className="mb-6 text-white leading-loose">
                     Start GPU mining Metchain to receive MET coin rewards.
                   </p>
                   <div
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    className="custom-button-colored font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
                     onClick={handleDownloadMiningPDF}
-
                   >
                     Start Mining
                   </div>
@@ -81,18 +85,21 @@ export const GetStarted = () => {
               </div>
 
               {/* Pricing Box 3: Premium */}
-              <div className="w-[350px] sm:w-[380px] lg:w-1/3 px-4 mb-8 lg:mb-0">
-                <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                  <img
-                    src={staking}
-                    alt="Beginner"
-                    className="mb-4 rounded-md image-container"
-                  />
-                  <p className="mb-10 text-white leading-loose">
-                    Engage in NFT staking to earn Met rewards.
-                  </p>
+              <div className="w-[350px] px-4 mb-8">
+                <div className="p-8 bg-customDarkBg3 rounded-3xl h-full flex flex-col justify-between">
+                  <div>
+                    <img
+                      src={staking}
+                      alt="Beginner"
+                      className="mb-4 rounded-md image-container"
+                      style={{ width: '100%', height: 'auto' }}
+                    />
+                    <p className="mb-6 text-white leading-loose">
+                      Engage in NFT staking to earn Met rewards.
+                    </p>
+                  </div>
                   <div
-                    className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
+                    className="custom-button-colored font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
                     onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
                   >
                     Start Staking
