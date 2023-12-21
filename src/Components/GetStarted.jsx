@@ -48,7 +48,7 @@ export const GetStarted = () => {
                     style={{ width: '500px', height: 'auto' }}
                   />
                   <p className="mb-10 text-white leading-loose">
-                    Experience the new Wallet.
+                  Create your Web wallet.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
@@ -68,7 +68,7 @@ export const GetStarted = () => {
                     className="mb-4 rounded-md image-container"
                   />
                   <p className="mb-10 text-white leading-loose">
-                    Get on board to get mining rewards.
+                    Start GPU mining Metchain to receive MET coin rewards.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
@@ -89,7 +89,7 @@ export const GetStarted = () => {
                     className="mb-4 rounded-md image-container"
                   />
                   <p className="mb-10 text-white leading-loose">
-                    Experience the full power of our staking platform.
+                    Engage in NFT staking to earn Met rewards.
                   </p>
                   <div
                     className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
