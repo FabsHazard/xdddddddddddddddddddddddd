@@ -18,12 +18,8 @@ export const HeroMet = () => {
       <div className="hero-content">
         <div className="hero-text">
           <p>
-            Scalable and Sustainable Transactions for the Next Generation of
-            Web3 Applications
-          </p>
-          <p>
-            Decentralized blockchain for smart contract execution, powered by an
-            evolved Heavyhash algorithm.
+            The next evolution in Metaverse ecosystems. <br />
+            Creating a decentralized portal for Web3 applications and smart contracts.
           </p>
         </div>
         <div className="hero-title">

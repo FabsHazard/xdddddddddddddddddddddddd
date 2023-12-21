@@ -68,9 +68,9 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; Copyright ©2023 Metchain. All rights reserved.
-          </p>
+            <p className="lg:text-center text-sm text-gray-400  pt-12 mt-16 hidden lg:block">
+              &copy; Copyright ©2023 Metchain. All rights reserved.
+            </p>
         </div>
       </div>
     </footer>
