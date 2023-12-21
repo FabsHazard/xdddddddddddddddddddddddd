@@ -19,7 +19,8 @@ export const HeroMet = () => {
         <div className="hero-text">
           <p>
             The next evolution in Metaverse ecosystems. <br />
-            Creating a decentralized portal for Web3 applications and smart contracts.
+            Creating a decentralized portal for Web3 applications and smart contracts. <br />
+            Web3 applications and smart contracts.            
           </p>
         </div>
         <div className="hero-title">
