@@ -5,7 +5,7 @@ const footerData = [
     title: "Resources",
     items: [
       { label: "White paper [Coming Soon]", link: "https://metchain.tech/whitepaper" },
-      { label: "Technical paper [Coming Soon]", link: "https://metchain.tech/Technicalpaper" },
+      { label: "Technical paper", link: "https://metchain.gitbook.io/docs/" },
       { label: "Explorer", link: "https://www.metscan.io/" },
     ],
   },
