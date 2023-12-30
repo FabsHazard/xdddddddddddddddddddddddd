@@ -5,6 +5,8 @@ import MediumImg from "../assets/images/Medium.png";
 import TwitterImg from "../assets/images/Twitter.png";
 import InstagramImg from "../assets/images/Instagram.png";
 import GithubImg from "../assets/images/Github.png";
+import RedditImg from "../assets/images/Reddit.png"
+import LinkTree from "../assets/images/LinkTreeWhite.png"
 import { useState, useRef } from "react";
 
 
@@ -163,6 +165,38 @@ export const Community = () => {
                   <a href="https://github.com/Metchain" target="_blank" rel="noopener noreferrer">
                     <motion.img
                       src={GithubImg}
+                      alt="Github"
+                      className="w-24 h-24"
+                      whileHover={{ scale: 1.1 }}
+                    />
+                  </a>
+                </motion.div>
+                <motion.div
+                  className="w-1/2 sm:w-1/3 py-6 flex justify-center"
+                  onHoverStart={() => handleGithubHover()}
+                  onHoverEnd={() => handleGithubHover()}
+                  variants={iconVariants}
+                  animate={isGithubHovered ? "hover" : "initial"}
+                >
+                  <a href="https://www.reddit.com/r/Metchain/s/Yy9anKZtWk" target="_blank" rel="noopener noreferrer">
+                    <motion.img
+                      src={RedditImg}
+                      alt="Github"
+                      className="w-24 h-24"
+                      whileHover={{ scale: 1.1 }}
+                    />
+                  </a>
+                </motion.div>
+                <motion.div
+                  className="w-1/2 sm:w-1/3 py-6 flex justify-center"
+                  onHoverStart={() => handleGithubHover()}
+                  onHoverEnd={() => handleGithubHover()}
+                  variants={iconVariants}
+                  animate={isGithubHovered ? "hover" : "initial"}
+                >
+                  <a href="https://linktr.ee/metchain" target="_blank" rel="noopener noreferrer">
+                    <motion.img
+                      src={LinkTree}
                       alt="Github"
                       className="w-24 h-24"
                       whileHover={{ scale: 1.1 }}
