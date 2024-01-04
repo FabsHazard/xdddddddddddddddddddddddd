@@ -45,12 +45,19 @@ export const Features1 = () => {
                   Unlike any blockchain you have used before
                 </h2>
                 <p className="mb-10 text-white leading-loose">
-                  Metchain is a decentralized virtual world platform on blockchain, handling high transaction
-                  volumes for real-time experiences, using a modified Heavyhash. It envisions coexistence,
-                  creation, and interaction in virtual worlds, facilitating NFTs and the decentralized
-                  Metaverse economy.
-                  With its already existing Layer 1 and Layer 2 blockchains, Metchain is well on its way to achieving its Layer 3 ambitions 
-                  handling high transaction volumes for real-time experiences.
+                  Metchain functions as a decentralized blockchain
+                  platform, efficiently handling significant
+                  transaction volumes for real-time experiences
+                  via a customized Heavyhash. The platform's
+                  objective is to promote coexistence, creation,
+                  and interaction in virtual worlds while supporting
+                  NFTs and fostering decentralized Metaverse
+                  interoperability and economy. With established
+                  Layer 1 and Layer 2 blockchains, Metchain is
+                  advancing towards its Layer 3 goals,
+                  emphasizing its role in handling high transaction
+                  volumes for real-time experiences and contributing
+                  to Metaverse interoperability.     
                 </p>
                 <ul className="mb-6 text-white">
                   <li className="mb-4 flex">
