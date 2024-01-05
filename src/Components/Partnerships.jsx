@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import TwitterImg from "../assets/images/CoinStatsLogo.png";
 import InstagramImg from "../assets/images/CoinGecko.jpeg";
+import ContractWolfImg from "../assets/images/ContractWolf.png";
 
 import { useState, useRef } from "react";
 
@@ -90,6 +91,22 @@ export const Partnerships = () => {
                       whileHover={{ scale: 1.1 }}
                     />
                   </a>
+                </motion.div>
+                <motion.div
+                  className="w-1/2 sm:w-1/3 py-6 flex justify-center"
+                  onHoverStart={() => handleInstagramHover()}
+                  onHoverEnd={() => handleInstagramHover()}
+                  variants={iconVariants}
+                  animate={isInstagramHovered ? "hover" : "initial"}
+                >
+                  <a href="https://contractwolf.io/projects/metchain-blockchain" target="_blank" rel="noopener noreferrer">
+                  <motion.img
+                    src={ContractWolfImg}
+                    alt="Instagram"
+                    className="w-24 h-24 object-contain" // Adjusted to fit without distortion
+                    whileHover={{ scale: 1.1 }}
+                  />
+                </a>
                 </motion.div>
                 
                 {/* Add more motion.div elements for additional images */}
