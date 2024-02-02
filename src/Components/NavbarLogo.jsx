@@ -22,12 +22,24 @@ const scrollToTop = () => {
 };
 
 const handleDownloadLogoPng = () => {
+
   const link = document.createElement('a');
-  link.href = LogoPng; // URL to the PDF file
-  link.download = 'Logo.png'; // File name when downloaded
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.click();
+
+  // Convert the imported LogoPng to a data URL
+  fetch(LogoPng)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      link.href = url;
+      link.download = 'Logo.png';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.click();
+
+      // Clean up the created object URL
+      URL.revokeObjectURL(url);
+    })
+    .catch(error => console.error('Error fetching LogoPng:', error));
 };
 
 const navbarLinks = [
