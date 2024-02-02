@@ -7,7 +7,8 @@ import React from 'react';
 import "../styles/logo.css";
 
 const scrollToCommunity = () => {
-  const communitySection = document.getElementById('community');
+  const communitySection = document.getElementById('Community');
+  //const communitySection = document.getElementsByClassName('Community');
   if (communitySection) {
     communitySection.scrollIntoView({ behavior: 'smooth' });
   }

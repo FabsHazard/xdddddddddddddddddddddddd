@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 
 
 export const Partnerships = () => {
-  const communityRef = useRef(null);
+  const partnershipRef = useRef(null);
 
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
   const [isTelegramHovered, setIsTelegramHovered] = useState(false);
@@ -48,7 +48,7 @@ export const Partnerships = () => {
   };
 
   return (
-    <section ref={communityRef} id="community" className="py-12 sm:py-24 bg-customDarkBg2 w-full mt-16 mb-16">
+    <section ref={partnershipRef} id="partnership" className="py-12 sm:py-24 bg-customDarkBg2 w-full mt-16 mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
