@@ -26,6 +26,7 @@ const navbarLinks = [
   { label: "NFT", href: "https://nft.metchain.tech/", ariaLabel: "NFT", openInNewTab: true },
   { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
   { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
+  { label: "BUY MET", href: "https://xeggex.com/", ariaLabel: "BuyMet", openInNewTab: true },
 ];
 
 export const Navbar = () => {

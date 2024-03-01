@@ -7,6 +7,7 @@ import "../styles/HeroMet.css";
 import background from "../assets/images/background.png";
 
 export const HeroMet = () => {
+
   return (
     <div className="hero-container">
       
@@ -22,12 +23,14 @@ export const HeroMet = () => {
             Creating a decentralized portal for Web3 applications and smart contracts. <br />
                   
           </p>
+
         </div>
         <div className="hero-title">
           <p>Metchain</p>
         </div>
       
       </div>
+
     </div>
   );
 };

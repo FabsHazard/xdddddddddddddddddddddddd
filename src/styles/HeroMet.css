@@ -108,4 +108,16 @@
     top: 250px; /* Adjust font size for smaller screens */
     /* Other adjustments as needed */
   }
+  .buy-button {
+    background-color: #007bff;
+    color: rgb(8, 6, 6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #0056b3;
+  }
 }
