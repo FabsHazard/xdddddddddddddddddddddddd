@@ -22,20 +22,7 @@ import Article2 from "./Article2";
 
 export const Tokenomics2 = () => {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
-
-  const articles = [
-    {
-      title : "Distribution Details",
-      image : chart,
-      description : `At the core of Metchain’s ecosystem lies MET,
-       the native coin designed not just for transactions but as a key unlocking a spectrum of functionalities and benefits.
-        `,
-
-    },
-
-   ]
-
-  return (
+    return (
     <section id="Technology-section" 
     style={{
     margin: 0, // Ensure zero margin
@@ -43,13 +30,8 @@ export const Tokenomics2 = () => {
   }}
     >
       <div className="title">
-        <h1>Tokenomics</h1>
+        <h1>Utilities and Tokenomics</h1>
         </div>
-      <div className="Articles">
-        {articles.map((article, index) => (
-          <Article2 key={index} {...article} reversed={index%2===1} />
-        ))}
-      </div>
 
       <motion.div
           initial={{ opacity: 0, y: 10, zIndex: 20 }}
