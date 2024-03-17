@@ -41,7 +41,7 @@
   max-width: fit-content;
 }
 .image-container-Utilities img {
-  max-width: 30%; /* Adjusts the maximum width of images to fit their container */
+  max-width: 100%; /* Adjusts the maximum width of images to fit their container */
   height: auto;
   margin-bottom: 10px;
 }
