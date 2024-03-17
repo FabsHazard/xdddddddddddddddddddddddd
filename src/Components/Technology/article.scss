@@ -27,16 +27,19 @@
             margin: 0;
             margin-bottom: 20px;
             white-space: normal;
-        }
-        p {
-            font-size: 16px;
+             /* Example color (dark gray) */
+          }
+          
+          p {
+            font-size: 25px;
             font-weight: 300;
             margin: 0;
             white-space: normal;
-            opacity: 0.8;
-        }
+            opacity: 0;
+            color: #DCA3EF; /* Example color (red) */
+          }
     }
-
+    
     @media screen and (max-width: 768px) {
         flex-direction: column;
         text-align: left;

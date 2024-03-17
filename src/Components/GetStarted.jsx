@@ -36,9 +36,10 @@ export const GetStarted = () => {
         >
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
-              <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-                Get Started
-              </h2>
+            <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading">
+              <span style={{color: '#ffffff'}}>Get</span>
+              <span style={{background: 'linear-gradient(to right, #4BBBF9 0%, #AB5ADA 50%, #EFB3E5 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent'}}> Started</span>
+          </h2>
             </div>
             <div className="flex flex-wrap justify-center gap-8 mt-20">
               {/* Pricing Box 1: Beginner */}

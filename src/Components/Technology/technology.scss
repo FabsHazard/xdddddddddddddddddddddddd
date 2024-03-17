@@ -14,9 +14,13 @@
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 80px;
             font-weight: 500;
             margin: 0;
+            background: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
         p {
             font-size: 18px;
