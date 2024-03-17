@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
-import EVM from "../../assets/images/EVM_v2.svg";
-import metaverse from "../../assets/images/metaverse_v2.svg";
-import algorithm from "../../assets/images/hexes.svg";
-import metcoins from "../../assets/images/coins.png";
+import EVM from "../../assets/images/EVM.png";
+import metaverse from "../../assets/images/Metaverse.png";
+import algorithm from "../../assets/images/Algorithm.png";
+import metcoins from "../../assets/images/Metcoins.png";
 import trading from "../../assets/images/trading.png";
 import React from "react";
 import "../../styles/imageStyles.css";
@@ -31,7 +31,7 @@ export const Technology = () => {
     },
     {
       title : "Metaswap Trading Protocol",
-      image : trading,
+      image : metcoins,
       description : `Metaswap is Metchain's native trading protocol, empowering users to establish liquidity pools, execute decentralized 
       exchanges, and stake tokens.`,
     },

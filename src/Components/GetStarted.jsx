@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import wallet from "../assets/images/Wallet.png";
 import mining from "../assets/images/metchainmining.png";
 import staking from "../assets/images/Staking.png";
+import button from "../assets/images/Button.png";
 import React from "react";
 import "../styles/imageStyles.css";
 import miningPdf from "../assets/pdfs/mining_tutorial.pdf";
@@ -104,6 +105,33 @@ export const GetStarted = () => {
                   >
                     Start Staking
                   </div>
+                  <button
+                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
+                    style={{
+                      border: 'none',
+                      padding: '0',
+                      background: 'none',
+                      cursor: 'pointer',
+                      position: 'relative', // Ensure the text overlays properly
+                    }}
+                  >
+                    <img src={button} alt="Start Staking" style={{ display: 'block' }} />
+                    <span
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        color: '#fff', // Adjust text color as needed
+                        fontSize: '16px', // Adjust font size as needed
+                        fontWeight: 'bold', // Adjust font weight as needed
+                        opacity: 0, // Initially hide text
+                        transition: 'opacity 0.3s ease', // Add smooth transition
+                      }}
+                    >
+                      Start Staking
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>
