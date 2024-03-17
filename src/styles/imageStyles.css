@@ -18,8 +18,8 @@
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24%, 1fr));
-  gap: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 1fr));
+  gap: 10px;
   justify-items: center; /* Center align the items horizontally */
   align-items: center; /* Center align the items vertically */
   text-align: center; 
