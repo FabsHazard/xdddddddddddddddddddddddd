@@ -3,7 +3,7 @@ import { CheckArrowIcon } from "../../assets/icons/CheckArrowIcon";
 import EVM from "../../assets/images/EVM.png";
 import metaverse from "../../assets/images/Metaverse.png";
 import algorithm from "../../assets/images/Algorithm.png";
-import metcoins from "../../assets/images/Metcoins.png";
+import metcoins from "../../assets/images/Metcoin.png";
 import trading from "../../assets/images/trading.png";
 import React from "react";
 import "../../styles/imageStyles.css";
