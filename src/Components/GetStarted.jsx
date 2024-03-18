@@ -58,7 +58,7 @@ export const GetStarted = () => {
                   </div>
                   <div
                     className="custom-button-colored font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
-                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
+                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/')}
                   >
                     Get the Wallet
                   </div>
@@ -102,7 +102,7 @@ export const GetStarted = () => {
                   </div>
                   <div
                     className="custom-button-colored font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
-                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/vec/')}
+                    onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/')}
                   >
                     Start Staking
                   </div>
