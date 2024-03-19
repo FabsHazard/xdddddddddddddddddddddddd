@@ -23,7 +23,6 @@ const scrollToTop = () => {
 const navbarLinks = [
   { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
   { label: "Mining Pool", href: "https://www.metminingpool.com/", ariaLabel: "Mining Pool", openInNewTab: true },
-  { label: "NFT", href: "https://nft.metchain.tech/", ariaLabel: "NFT", openInNewTab: true },
   { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
   { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
   { label: "BUY MET", href: "https://xeggex.com/", ariaLabel: "BuyMet", openInNewTab: true },
