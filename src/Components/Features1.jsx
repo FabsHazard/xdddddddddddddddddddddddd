@@ -48,7 +48,7 @@ export const Features1 = () => {
                   Metchain functions as a decentralized blockchain
                   platform, efficiently handling significant
                   transaction volumes for real-time experiences
-                  via a customized Heavyhash. The platform's
+                  via a customized KHeavyhash. The platform's
                   objective is to promote coexistence, creation,
                   and interaction in virtual worlds while supporting
                   NFTs and fostering decentralized Metaverse
