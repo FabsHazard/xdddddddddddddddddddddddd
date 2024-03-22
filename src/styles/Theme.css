@@ -68,6 +68,10 @@ html {
 .custom-button-colored {
   @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
+.custom-button-colored2 {
+  @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+}
+
 
 /* Navbar */
 

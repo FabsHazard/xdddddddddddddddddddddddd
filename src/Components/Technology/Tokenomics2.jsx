@@ -48,10 +48,6 @@ export const Tokenomics2 = () => {
               <img src={infotokenomics5} alt="Tokenomics 5" />
           </div>
           </div>
-
-
-
-
         </motion.div>
         <div className="image-grid flex-wrap justify-center">
           <img src={dashboard3} alt="Image 1" />
@@ -60,8 +56,6 @@ export const Tokenomics2 = () => {
           <img src={dashboard6} alt="Image 4" />
           
         </div>
-
-
 
           <div className="image-container mx-auto flex justify-center">
           <div className="w-4/5 2xl:w-[1200px] mx-auto relative rounded-xl overflow-hidden justify-center">
