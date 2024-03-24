@@ -30,9 +30,9 @@ export const Technology = () => {
       description : `Metchain is built on a modified KHeavyhash algorithm, which enables low-impact, high-speed, and secure transactions.`,
     },
     {
-      title : "Metswap Trading Protocol",
+      title : "MetSwap Trading Protocol",
       image : metcoins,
-      description : `Metswap is Metchain's native trading protocol, empowering users to establish liquidity pools, execute decentralized 
+      description : `MetSwap is Metchain's native trading protocol, empowering users to establish liquidity pools, execute decentralized 
       exchanges, and stake tokens.`,
     },
   ]
