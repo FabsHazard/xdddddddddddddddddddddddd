@@ -31,7 +31,17 @@
   /*#left: 1650px; /* Adjust left position as needed */
   z-index: 0;
   /*opacity: 0.9;*/
+}
 
+h3 {
+  font-size: 80px;
+  font-weight: 500;
+  font-style: bold;
+  margin: 0;
+  background: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
   
-}
