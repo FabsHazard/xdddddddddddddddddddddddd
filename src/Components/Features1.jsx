@@ -86,8 +86,10 @@ export const Features1 = () => {
 
       
           {price !== null && (
-            <div className="mt-6 text-white text-center text-2xl lg:text-3xl">
-              MetCoin Price: ${price}
+            <div className="price-box mt-6 ">
+              <div className="text-white text-center text-2xl lg:text-3xl">
+                MetCoin Price: ${price}
+              </div>
             </div>
           )}
 
