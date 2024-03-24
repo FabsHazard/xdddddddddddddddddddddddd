@@ -69,10 +69,14 @@ html {
   @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 .custom-button-colored2 {
-  @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+  background: transparent; /* Set background to transparent */
+  border: 2px solid; /* Add a border */
+  border-image: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%); /* Set border image to linear gradient */
+  border-image-slice: 1; /* Ensure the border image covers the entire border */
 }
-
-
+.custom-button-colored2:hover {
+  box-shadow: 0 0 10px #7274f3; /* Add glow effect on hover */
+}
 /* Navbar */
 
 .navbar-link {
