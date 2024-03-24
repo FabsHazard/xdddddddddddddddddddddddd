@@ -44,4 +44,12 @@ h3 {
   color: transparent;
 }
 
-  
+.price-box {
+  background: transparent; /* Set background to transparent */
+  border: 2px solid; /* Add a border */
+  border-image: linear-gradient(to right, #EFB3E5 0%, #AB5ADA 50%, #4BBBF9 100%); /* Set border image to linear gradient */
+  border-image-slice: 1; /* Ensure the border image covers the entire border */
+  padding: 20px; /* Add padding for text */
+  width: fit-content; /* Adjust width to fit content */
+  margin: auto; /* Center the box */
+}
