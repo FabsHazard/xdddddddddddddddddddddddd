@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import React from 'react';
 
-
 import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
+import backgroundlines from "../assets/images/BackgroundMod.png";
 
 export const FeaturesDiagonal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
+    <section className="relative lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1" style={{ background: `url(${backgroundlines}) center center/cover no-repeat` }}>
       <div className="custom-shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -73,7 +73,6 @@ export const FeaturesDiagonal = () => {
           ></path>
         </svg>
       </div>
-
     </section>
   );
 };

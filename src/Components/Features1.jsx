@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
 import feature1 from "../assets/images/feature1.jpg";
 import feature2 from "../assets/images/feature2.jpg";
 import feature3 from "../assets/images/feature3.jpg";
@@ -11,6 +10,21 @@ import background1 from "../assets/images/Background1.png";
 import "../styles/gradient.css";
 
 export const Features1 = () => {
+  const [price, setPrice] = useState(null); 
+  useEffect(() => {
+    fetchPrice();
+  }, []);
+
+  const fetchPrice = async () => {
+    try {
+      const response = await fetch("https://api.xeggex.com/api/v2/asset/getbyid/65dea6efb9f343ee794a9d68");
+      const data = await response.json();
+      const truncatedPrice = parseFloat(data.usdValue).toFixed(3); 
+      setPrice(truncatedPrice);
+    } catch (error) {
+      console.error("Error fetching price:", error);
+    }
+  };
   return (
     <section
       className="w-full bg-customDarkBg2 mt-20 mb-8 sm:mt-16 sm:mb-16 xl:mt-0 xl:m pt-[2rem]  md:pt-[12vw] lg:pt-0"
@@ -71,6 +85,11 @@ export const Features1 = () => {
           </div>
 
       
+          {price !== null && (
+            <div className="mt-6 text-white text-center text-2xl lg:text-3xl">
+              MetCoin Price: ${price}
+            </div>
+          )}
 
           <div className="mb-8 lg:mb-0 px-2 flex justify-center flex-col lg:flex-row">
             <div className="mb-4 lg:mb-0 py-2 px-3 rounded-lg">
