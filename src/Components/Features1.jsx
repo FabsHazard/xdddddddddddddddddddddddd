@@ -74,7 +74,7 @@ export const Features1 = () => {
                   <span className="ml-2 text-white">Layer 1</span>
                 </div>
                 <div className="mr-8 flex items-center">
-                  <CheckArrowIcon />
+                  <LoadingIcon />
                   <span className="ml-2 text-white">Layer 2</span>
                 </div>
                 <div className="flex items-center">
