@@ -39,7 +39,7 @@ export const Features1 = () => {
             <h3 className="mt-6 mb-4 text-4xl lg:text-5xl titulofade">
               You Have Used Before
             </h3>
-            <p className="mb-8 text-white text-center text-sm lg:text-base md:w-11/12 lg:w-3/4 mx-auto">
+            <p className="mt-6 mb-4 text-white text-center text-sm lg:text-base">
                 Metchain functions as a decentralized blockchain
                 platform, efficiently handling significant
                 transaction volumes for real-time experiences
