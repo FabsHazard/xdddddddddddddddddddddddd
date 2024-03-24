@@ -48,7 +48,7 @@ export const Features1 = () => {
           <div className="mx-auto lg:mb-0 w-95 sm:w-4/5 md:w-95 lg:w-unset text-center">
             <h2 className="text-xl lg:text-2xl font-bold mb-4 " style={{ color: "#DCA3EF" }}>Embrace Innovation</h2>
             <h2 className="mt-6 mb-4 text-4xl lg:text-5xl custom-block-big-title">
-              Unlike any blockchain
+              Unlike Any Blockchain
             </h2>
             <h3 className="mt-6 mb-4 text-4xl lg:text-5xl titulofade">
               You Have Used Before
