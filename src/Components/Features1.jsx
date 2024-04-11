@@ -68,20 +68,7 @@ export const Features1 = () => {
                 volumes for real-time experiences and contributing
                 to Metaverse interoperability.     
               </p>
-              <div className="mb-8 lg:mb-0 px-2 flex justify-center flex-col lg:flex-row">
-                <div className="mr-8 flex items-center">
-                  <CheckArrowIcon />
-                  <span className="ml-2 text-white">Layer 1</span>
-                </div>
-                <div className="mr-8 flex items-center">
-                  <LoadingIcon />
-                  <span className="ml-2 text-white">Layer 2</span>
-                </div>
-                <div className="flex items-center">
-                  <LoadingIcon />
-                  <span className="ml-2 text-white">Layer 3</span>
-                </div>
-              </div>
+
           </div>
 
       
