@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { useState } from "react";
 import "../styles/HeroMet.css";
-import background from "../assets/images/background.svg";
+import background from "../assets/images/Background.svg";
 
 export const HeroMet = () => {
 
