@@ -20,6 +20,18 @@ import "./technology2.scss";
 import Article2 from "./Article2";
 
 export const Tokenomics2 = () => {
+  const apiKeys = [
+    "17119f55-f02a-4186-98da-d26ca5acb906",
+    "2688114c-e4cf-4e9e-930c-156df01c9f68",
+    "65dbe63d-b52b-43a8-bf42-0859298e07ea",
+    "bd416ca4-91c1-4900-a0fd-38e166c70b1b",
+    "another_api_key_5",
+    "another_api_key_6",
+    // Add more API keys as needed
+  ];
+
+  const [currentApiKeyIndex, setCurrentApiKeyIndex] = useState(0);
+
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [circulatingSupply, setCirculatingSupply] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
@@ -28,14 +40,14 @@ export const Tokenomics2 = () => {
    
   useEffect(() => {
     fetchStats();  
-  }, []);
+  }, [currentApiKeyIndex]);
   const fetchStats = async () => {
     try {
       const response = await fetch(new Request("https://api.livecoinwatch.com/coins/single"), {
         method: "POST",
         headers: new Headers({
           "content-type": "application/json",
-          "x-api-key": "17119f55-f02a-4186-98da-d26ca5acb906",
+          "x-api-key": apiKeys[currentApiKeyIndex],
         }),
         body: JSON.stringify({
           currency: "USD",
@@ -45,7 +57,14 @@ export const Tokenomics2 = () => {
       });
   
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        // Switch to the next API key if available
+        if (currentApiKeyIndex < apiKeys.length - 1) {
+          setCurrentApiKeyIndex(prevIndex => prevIndex + 1);
+          fetchStats();
+          return;
+        } else {
+          throw new Error('Network response was not ok');
+        }
       }
   
       const data = await response.json();
