@@ -13,6 +13,16 @@ const footerData = [
     title: "About",
     items: [{ label: "Team [Coming Soon]", link: "https://metchain.tech/team" }],
   },
+  {
+    title: "Partners",
+    items: [
+      {
+        label: "TradingView",
+        description: "Metchain has partnered with TradingView for its charting technology. A comprehensive trading and investing platform offering cutting edge analytical tools, global market data and financial news to track bitcoin usd and many others.",
+        link: "https://www.tradingview.com/symbols/BTCUSD/"
+      }
+    ]
+  }
 ];
 
 export const Footer = () => {
@@ -67,6 +77,27 @@ export const Footer = () => {
                       >
                         {item.label}
                       </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
+                <h3 className="mb-6 text-2xl font-bold text-white">
+                  Partners
+                </h3>
+                <ul>
+                  {footerData[2].items.map((item, i) => (
+                    <li key={i} className="mb-4">
+                      <a
+                        className="text-gray-400 hover:text-gray-300"
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={item.label}
+                      >
+                        {item.label}
+                      </a>
+                      <p className="text-gray-400 text-sm">{item.description}</p>
                     </li>
                   ))}
                 </ul>
