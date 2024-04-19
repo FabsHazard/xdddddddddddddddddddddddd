@@ -88,6 +88,7 @@ export const Footer = () => {
                 <ul>
                   {footerData[2].items.map((item, i) => (
                     <li key={i} className="mb-4">
+                      <h4 className="text-white hover:text-gray-300 mb-2">{item.label}</h4>
                       <p className="text-gray-400 mb-2">{item.description}<a
                         className="text-white hover:text-gray-300"
                         href={item.link}
