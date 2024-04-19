@@ -18,7 +18,7 @@ const footerData = [
     items: [
       {
         label: "TradingView",
-        description: "Metchain has partnered with TradingView for its charting technology. A comprehensive trading and investing platform offering cutting edge analytical tools, global market data and financial news to track bitcoin usd and many others.",
+        description: "Metchain has partnered with TradingView for its charting technology. A comprehensive trading and investing platform offering cutting edge analytical tools, global market data and financial news to track ",
         link: "https://www.tradingview.com/symbols/BTCUSD/"
       }
     ]
@@ -47,7 +47,7 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-white">Resources</h3>
                 <ul>
                   {footerData[0].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                    <li key={i} className="mb-4 text-gray-400">
                       <a
                         className="text-gray-400 hover:text-gray-300"
                         href={item.link}
@@ -88,16 +88,15 @@ export const Footer = () => {
                 <ul>
                   {footerData[2].items.map((item, i) => (
                     <li key={i} className="mb-4">
-                      <a
-                        className="text-gray-400 hover:text-gray-300"
+                      <p className="text-gray-400 mb-2">{item.description}<a
+                        className="text-white hover:text-gray-300"
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={item.label}
                       >
-                        {item.label}
-                      </a>
-                      <p className="text-gray-400 text-sm">{item.description}</p>
+                        bitcoin usd
+                      </a> and many others.</p>
                     </li>
                   ))}
                 </ul>
