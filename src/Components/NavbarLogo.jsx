@@ -43,7 +43,7 @@ const handleDownloadLogoPng = () => {
 };
 
 const navbarLinks = [
-  { label: "Home", href: "/", ariaLabel: "Home", openInNewTab: true },
+  { label: "Home", href: "/", ariaLabel: "Home", openInNewTab: false },
   { label: "Explorer", href: "https://www.metscan.io/", ariaLabel: "Explorer", openInNewTab: true },
   { label: "Mining Pool", href: "https://www.metminingpool.com/", ariaLabel: "Mining Pool", openInNewTab: true },
   { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
