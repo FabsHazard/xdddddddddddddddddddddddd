@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 const footerData = [
   {
     title: "Resources",
@@ -102,6 +102,22 @@ export const Footer = () => {
                   ))}
                 </ul>
               </div>
+              <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
+              <motion.a 
+                href="/disclaimer" 
+                className="hover-button" 
+                whileHover={{ scale: 1.1 }}
+                style={{ 
+                  display: 'inline-block', 
+                  transition: 'transform 0.2s',
+                  /* Add any other necessary styles here */
+                }}
+              >
+                <h3 className="mb-6 text-2xl font-bold text-white">
+                  Disclaimer
+                </h3>
+              </motion.a>
+            </div>
             </div>
           </div>
           <p className="lg:text-center text-sm text-gray-400 pt-12 mt-16 hidden lg:block">
