@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import whitePaperPdf from '../assets/pdfs/white-paper.pdf';
+import whitePaperPdf from '../assets/pdfs/metchain_whitepaper.pdf';
 
 const footerData = [
   {
