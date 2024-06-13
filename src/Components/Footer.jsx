@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import whitePaperPdf from '../assets/pdfs/white-paper.pdf';
 
 const footerData = [
   {
     title: "Resources",
     items: [
-      { label: "White paper", link: "../assets/pdfs/metchain_whitepaper.pdf" },
+      { label: "White paper", link: whitePaperPdf },
       { label: "Explorer", link: "https://www.metscan.io/" },
     ],
   },
