@@ -11,31 +11,48 @@ export const MiningCalculator = () => {
   const [minerPower, setMinerPower] = useState('');
   const [powerPrice, setPowerPrice] = useState('');
   const [miningTarget, setMiningTarget] = useState('');
-  const [daysToTarget, setDaysToTarget] = useState('');
   const [results, setResults] = useState(null);
 
   const calculateMiningData = () => {
-    const poolHashRateInGH = parseFloat(poolHashRate) * 1e6; // Convert TH/s to GH/s
+    const poolHashRateInTH = parseFloat(poolHashRate); // TH/s
+    const dailyPoolEmissionInMetcoins = parseFloat(dailyPoolEmission);
+    const metcoinPriceInUSD = parseFloat(metcoinPrice);
     const minerHashRateInGH = parseFloat(minerHashRate); // GH/s
     const minerPowerInWatts = parseFloat(minerPower);
     const powerPriceInUSD = parseFloat(powerPrice);
-    const dailyPoolEmissionInMetcoins = parseFloat(dailyPoolEmission);
-    const metcoinPriceInUSD = parseFloat(metcoinPrice);
-
+    const miningTargetInMetcoins = parseFloat(miningTarget);
+  
+    // Convert pool hash rate from TH/s to GH/s
+    const poolHashRateInGH = poolHashRateInTH * 1e3;
+  
+    // Calculate daily emission for the miner
     const dailyMinerEmission = (minerHashRateInGH / poolHashRateInGH) * dailyPoolEmissionInMetcoins;
+  
+    // Calculate daily earning in USD
     const dailyEarningUSD = dailyMinerEmission * metcoinPriceInUSD;
+  
+    // Calculate daily cost in USD
     const dailyCostUSD = (minerPowerInWatts * 24 / 1000) * powerPriceInUSD;
+  
+    // Calculate daily profit in USD
     const dailyProfitUSD = dailyEarningUSD - dailyCostUSD;
+  
+    // Calculate profit percentage
     const profitPercent = (dailyProfitUSD / dailyCostUSD) * 100;
-
+  
+    // Calculate days to reach target
+    const daysToTarget = Math.ceil(miningTargetInMetcoins / dailyMinerEmission);
+  
     setResults({
       dailyMinerEmission: dailyMinerEmission.toFixed(2),
       dailyEarningUSD: dailyEarningUSD.toFixed(2),
       dailyCostUSD: dailyCostUSD.toFixed(2),
       dailyProfitUSD: dailyProfitUSD.toFixed(2),
       profitPercent: profitPercent.toFixed(2),
+      daysToTarget: daysToTarget.toFixed(0), // Round days to reach target to nearest integer
     });
   };
+  
 
   return (
     <section
@@ -152,8 +169,8 @@ export const MiningCalculator = () => {
                     <input
                       type="number"
                       id="daysToTarget"
-                      value={daysToTarget}
-                      onChange={(e) => setDaysToTarget(e.target.value)}
+                      value={results ? results.daysToTarget : ''}
+                      readOnly // Make this read-only since it's calculated
                       className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
@@ -181,7 +198,7 @@ export const MiningCalculator = () => {
                     <div>
                       <p className="text-gray-700 font-bold">Daily Profit (USD):</p>
                       <p className="text-gray-800">{results.dailyProfitUSD}</p>
-                    </div>
+                      </div>
                     <div>
                       <p className="text-gray-700 font-bold">Profit Percent (%):</p>
                       <p className="text-gray-800">{results.profitPercent}</p>
@@ -196,5 +213,3 @@ export const MiningCalculator = () => {
     </section>
   );
 };
-
-
