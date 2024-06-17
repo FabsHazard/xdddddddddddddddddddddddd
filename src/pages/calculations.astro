@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { NavbarLogo } from "../Components/NavbarLogo";
 import { HeroMetLogo} from "../Components/HeroMetLogo";
-import { DisclaimerComponent} from "../Components/DisclaimerComponent/DisclaimerComponent";
+import { MiningCalculator} from "../Components/Calculations/MiningCalculator";
 import { Navbar } from "../Components/Navbar";
 import "../styles/Theme.css";
 import "../styles/Diagonals.css";
@@ -10,6 +10,6 @@ import "../styles/Diagonals.css";
 <Layout title="Calculations">
 
 {<NavbarLogo  client:load />}
-<DisclaimerComponent client:load />
+<MiningCalculator client:load />
 
 </Layout>
