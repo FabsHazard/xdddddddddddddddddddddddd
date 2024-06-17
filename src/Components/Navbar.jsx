@@ -25,6 +25,7 @@ const navbarLinks = [
   { label: "Mining Pool", href: "https://www.metminingpool.com/", ariaLabel: "Mining Pool", openInNewTab: true },
   { label: "Wallet", href: "https://metwallet.metchain.tech/vec/", ariaLabel: "Wallet", openInNewTab: true },
   { label: "Community", href: "#community", ariaLabel: "Community", onClick: scrollToCommunity },
+  //{ label: "News", href: "/news", ariaLabel: "BuyMet", openInNewTab: true },
   { label: "BUY MET", href: "https://xeggex.com/market/MET_USDT", ariaLabel: "BuyMet", openInNewTab: true },
 ];
 
