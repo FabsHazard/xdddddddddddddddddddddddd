@@ -24,7 +24,7 @@ const newsData = [
 ];
 
 const NewsItem = ({ image, date, title, paragraph }) => (
-  <div className="bg-white p-6 mb-6 rounded-lg shadow-lg">
+  <div className="bg-[#f1f1f1] p-6 mb-6 rounded-lg shadow-lg">
     <img src={image} alt={title} className="w-full h-48 object-cover rounded-t-lg" />
     <div className="p-4">
       <p className="text-gray-600 text-sm">{date}</p>
