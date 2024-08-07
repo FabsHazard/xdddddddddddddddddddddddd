@@ -59,6 +59,7 @@ export const GetStarted = () => {
                   <div
                     className="custom-button-colored2 text-white font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
                     onClick={() => handleOpenNewTab('https://metwallet.metchain.tech/')}
+                    style={{ marginBottom: '10px' }} // adjust as needed
                   >
                     V3 Wallet
                   </div>
@@ -68,6 +69,7 @@ export const GetStarted = () => {
                   >
                     V4 Wallet
                   </div>
+
                 </div>
               </div>
 
