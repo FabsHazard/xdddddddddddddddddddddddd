@@ -30,9 +30,10 @@ jobs:
         run: npm run build  # Builds the site
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1  # Ensures compatibility with GitHub Pages
+        uses: actions/upload-artifact@v4  # 🔥 Cambiado a v4 para evitar el error de deprecación
         with:
-          path: ./dist  # Make sure this is the correct output directory
+          name: github-pages
+          path: ./dist  # Asegúrate de que sea la carpeta correcta
 
   deploy:
     needs: build
@@ -43,4 +44,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Updated to latest version
+        uses: actions/deploy-pages@v2  # Mantiene la versión actual
