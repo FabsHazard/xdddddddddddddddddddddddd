@@ -225,6 +225,7 @@ export const Community = () => {
           </div>
         </div>
       </motion.div>
+      
     </section>
   );
 };
