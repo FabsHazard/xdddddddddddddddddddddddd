@@ -29,10 +29,10 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Upload artifact  # 🔥 Asegurar nombre correcto para deploy-pages@v2
-        uses: actions/upload-pages-artifact@v1  # Debe ser upload-PAGES-artifact, no upload-artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist  # Asegúrate de que esta es la carpeta correcta
+          path: ./dist  # Asegúrate de que esta es la carpeta donde se genera el sitio
 
   deploy:
     needs: build
