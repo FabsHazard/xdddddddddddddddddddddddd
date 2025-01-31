@@ -5,6 +5,7 @@ import feature2 from "../assets/images/feature2.jpg";
 import feature3 from "../assets/images/feature3.jpg";
 import "../styles/gradient.css";
 
+
 export const Features1 = () => {
   const [price, setPrice] = useState(null);
 
