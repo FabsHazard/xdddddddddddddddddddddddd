@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # Ejecutar el workflow cuando se haga push a `main`
-  workflow_dispatch:  # Permitir ejecución manual desde la pestaña Actions en GitHub
+    branches: [ main ]  # Triggers the workflow on push to the `main` branch
+  workflow_dispatch:  # Allows manual execution from the GitHub Actions tab
 
 permissions:
   contents: read
@@ -15,18 +15,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # Actualizado a la última versión
+        uses: actions/checkout@v4  # Updated to latest stable version
+
+      - name: Cache APT packages
+        uses: awalsh128/cache-apt-pkgs-action@v1.4.3  # Upgraded version
+        with:
+          packages: git curl
+          version: 1.0
 
       - name: Install dependencies
-        run: npm ci  # Asegura una instalación limpia de paquetes
+        run: npm ci  # Ensures a clean installation of dependencies
 
       - name: Build site
-        run: npm run build  # Construye el sitio
+        run: npm run build  # Builds the site
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1  # Nueva versión recomendada
+        uses: actions/upload-pages-artifact@v1  # Ensures compatibility with GitHub Pages
         with:
-          path: ./dist  # Asegúrate de que el directorio de salida sea correcto
+          path: ./dist  # Make sure this is the correct output directory
 
   deploy:
     needs: build
@@ -37,4 +43,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Versión más reciente de la acción de despliegue
+        uses: actions/deploy-pages@v2  # Updated to latest version
