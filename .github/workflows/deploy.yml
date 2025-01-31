@@ -1,5 +1,4 @@
 name: Deploy to GitHub Pages
-uses: actions/upload-artifact@v3
 
 on:
   push:
