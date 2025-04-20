@@ -1,14 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -19,14 +15,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
-      - name: Install, build, and upload your site
-        uses: withastro/action@v1
-        #with:
-         #   node-version: 12
-          # path: . # The root location of your Astro project inside the repository. (optional)
-          # node-version: 18 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+        uses: actions/checkout@v4  # Updated to v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4  # Use latest Node setup action
+        with:
+          node-version: 18  # Specify Node version
+          cache: 'pnpm'  # Cache dependencies if using pnpm
+
+      - name: Install dependencies
+        run: pnpm install  # Use pnpm, npm, or yarn based on your project
+
+      - name: Build Astro site
+        run: pnpm run build  # Adjust based on your build command (e.g., npm run build)
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4  # Use v4
+        with:
+          name: astro-site
+          path: dist/  # Adjust to your Astro build output directory (usually 'dist')
+          retention-days: 1
 
   deploy:
     needs: build
@@ -35,6 +43,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4  # Use v4
+        with:
+          name: astro-site
+          path: dist/  # Download to the same directory
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4  # Updated to v4
