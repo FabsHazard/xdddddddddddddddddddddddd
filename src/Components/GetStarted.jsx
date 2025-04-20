@@ -65,7 +65,7 @@ export const GetStarted = () => {
                   </div>
                   <div
                     className="custom-button-colored2 text-white font-bold leading-loose text-center py-2 px-4 rounded-xl rounded-t-xl"
-                    onClick={() => handleOpenNewTab('https://wallet.metchain.tech/')}
+                    onClick={() => handleOpenNewTab('https://www.wallet.metchain.org/')}
                   >
                     V4 Wallet
                   </div>
