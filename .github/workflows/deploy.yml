@@ -15,18 +15,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v4 # Update to v4
+        uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # Required for GitHub Pages
-      - name: Install, build, and upload your site
-        uses: withastro/action@v2 # Update to v2 (check for latest version)
+        uses: actions/configure-pages@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: 18 # Specify Node version explicitly
-          # package-manager: pnpm@latest # Uncomment if needed
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Build Astro site
+        run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # Use v3 for Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Adjust to your Astro project's output directory (commonly 'dist')
+          path: ./dist # Adjust to your Astro project's output directory (e.g., 'dist')
 
   deploy:
     needs: build
@@ -37,4 +40,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # Update to v4
+        uses: actions/deploy-pages@v4
